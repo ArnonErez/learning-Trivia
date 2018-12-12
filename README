@@ -1,0 +1,54 @@
+This is a small project I've made while learning Python as part of a Data Science course.
+This project was meant to practice our OOP capabalities with Python as well as working 
+with two types of databases - SQL and No-SQL. Specifically, we used Microsoft's SQL-Server 
+and MongoDB.
+
+This project uses a command-line UI.
+The project requires either of the databases mentioned installed on the local machine, or 
+a connection to a remote server with one of them installed.
+The name of the server must be manually changed.
+
+NOTE: This is a learning project and not meant to be run by anyone but me, but feel free to 
+clone and test it if you like.
+
+Here are the instructions for the project:
+
+In this project, you will build a Trivia game application. To implement this project, you’ll use
+Python, Pandas, Matplotlib, SQL server and MongoDB.
+
+Database description
+
+The system should have a database for storing the trivia questions.
+Each trivia question has the following fields:
+    1. Category, e.g., Science & Nature, Sports, Computers, etc.
+    2. Difficulty – Easy, Medium or Hard
+    3. Type of question – Multiple Choice or True/False.
+For each question, you need to store the list of incorrect answers, and the correct answer.
+In addition, you should store a list of users, and keep track which questions were answered
+correctly by each user.
+
+System functionality
+
+The system has two modes of operations: normal and admin.
+The mode of operation is determined by a command line argument named mode. If no
+argument is given, the default mode should be normal.
+
+In normal mode, a user plays the Trivia game using the questions stored in the database.
+First, the user should enter his name, and then he/she should choose:
+    1. Category of questions
+    2. Difficulty level (Easy, Medium, Hard)
+    3. Number of questions
+Then the system should present to the user random Trivia questions from the database
+according to his/her choices. When the game finishes, the system should show to the user how
+many questions he/she answered correctly. In addition, the system should store for each
+question whether the user answered it correctly or not.
+
+In admin mode, you should display an administrative menu, with the following options:
+    1. Add/remove a category (removing a category should delete all the questions from that
+category).
+    2. Add a trivia question. Ask the admin to choose the question’s category from the list of categories, the type of question (multiple choice or True/False), its difficulty level, and then the text of the question itself and its possible answers.
+    3. Load questions into the database from the Open Trivia Database (see below).
+    4. Get game statistics. In this option, the admin will be able to choose one of the following tables/graphs:
+        a) A bar plot that shows the number of correct/incorrect answers received in each category.
+        b) A bar plot that shows the number of correct/incorrect answers received in each difficulty level.
+        c) A table that shows the three users with the highest scores. For each users, show its name, number of correct answers, and number of incorrect answers.
